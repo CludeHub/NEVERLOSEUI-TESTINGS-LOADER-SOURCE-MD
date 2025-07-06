@@ -227,7 +227,7 @@ function NEVERLOSE:Theme(name)
 end
 
 function NEVERLOSE:AddWindow(NameScriptHub,Text,theme,UICustomSize)
-		theme = tostring(name or "original"):lower()
+		theme = tostring(theme or "original"):lower()
 	if theme == "original" then
 		NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(1, 17, 33)
 		NEVERLOSE.Themes.BlackColor = Color3.fromRGB(9, 9, 19)
