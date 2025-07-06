@@ -6,7 +6,7 @@
 
 ## # Load NEVERLOSE UI Library
 ```lua
-local NEVERLOSE = loadstring(game:HttpGet("https://raw.githubusercontent.com/CludeHub/SourceCludeLib/refs/heads/main/NerverLoseLibEdited.lua"))()
+local NEVERLOSE = loadstring(game:HttpGet("https://raw.githubusercontent.com/CludeHub/NEVERLOSEUI-TESTINGS-LOADER-SOURCE-MD/refs/heads/main/NEVERLOSEUI.lua"))()
 ```
 
 Guide: This loads the NEVERLOSE UI library from the GitHub repository.
@@ -15,7 +15,7 @@ Guide: This loads the NEVERLOSE UI library from the GitHub repository.
 
 # Create Theme Selection and Main Window and Notification System
 ```lua
-local Window = NEVERLOSE:AddWindow("NEVERLOSE","TEXT HERE",'dark') -- dark, neon
+local Window = NEVERLOSE:AddWindow("NEVERLOSE","TEXT HERE",'neon') -- dark, neon
 ```
 ```lua
 local Notification = NEVERLOSE:Notification()
