@@ -132,9 +132,6 @@ local NEVERLOSE = {
 
 print(NEVERLOSE._Name..":",NEVERLOSE._Version..':',[[https://neverlose.cc/]],": UI BY OWNER BEDOL HUB","__ui")
 
-function NEVERLOSE:Theme(name)
-end
-
 function NEVERLOSE:AddWindow(NameScriptHub,Text,name,UICustomSize)
 		name = tostring(name or "original"):lower()
 	if name == "original" then
