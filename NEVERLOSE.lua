@@ -68,7 +68,7 @@ local function GetImageData(name:string,image:ImageLabel)
 	name = name or "ADS"
 	name = name:lower()
 	local NigImage = "rbxassetid://3926305904"
-	if name == "ads" then
+        if name == "ads" then
 		image.Image = NigImage
 		image.ImageRectOffset = Vector2.new(205,565)
 		image.ImageRectSize = Vector2.new(35,35)
@@ -110,21 +110,123 @@ local function GetImageData(name:string,image:ImageLabel)
 
 	if name == "user" then
 		image.Image = "rbxassetid://10494577250"
+		image.ImageRectOffset = Vector2.new(1, 1)
+		image.ImageRectSize = Vector2.new(1200,1200)
+	end
+
+	if name == "cosmetics" then
+		image.Image = "rbxassetid://111448140849101"
+		image.ImageRectOffset = Vector2.new(1, 1)
+		image.ImageRectSize = Vector2.new(1200,1200)
+	end
+
+	if name == "sun" then
+		image.Image = "rbxassetid://119948798441279"
+		image.ImageRectOffset = Vector2.new(1, 1)
+		image.ImageRectSize = Vector2.new(1200,1200)
+	end
+
+	if name == "shop" then
+		image.Image = "rbxassetid://97513888174732"
+		image.ImageRectOffset = Vector2.new(1, 1)
+		image.ImageRectSize = Vector2.new(1200,1200)
+	end
+
+	if name == "farm" then
+		image.Image = "rbxassetid://88262334591015"
+		image.ImageRectOffset = Vector2.new(1, 1)
+		image.ImageRectSize = Vector2.new(1200,1200)
+	end
+
+	if name == "code" then
+		image.Image = "rbxassetid://137998322875646"
+		image.ImageRectOffset = Vector2.new(1, 1)
+		image.ImageRectSize = Vector2.new(1200,1200)
+	end
+
+	if name == "crosshair" then
+		image.Image = "rbxassetid://131971010421922"
+		image.ImageRectOffset = Vector2.new(1, 1)
+		image.ImageRectSize = Vector2.new(1200,1200)
+	end
+
+	if name == "grenade" then
+		image.Image = "rbxassetid://106253651509472"
+		image.ImageRectOffset = Vector2.new(1, 1)
+		image.ImageRectSize = Vector2.new(1200,1200)
+	end
+
+	
+
+	if name == "bio" then
+		image.Image = "rbxassetid://78652086695674"
+		image.ImageRectOffset = Vector2.new(1, 1)
+		image.ImageRectSize = Vector2.new(1200,1200)
+	end
+
+	if name == "car" then
+		image.Image = "rbxassetid://116283987324457"
+		image.ImageRectOffset = Vector2.new(1, 1)
+		image.ImageRectSize = Vector2.new(1200,1200)
+	end
+
+	if name == "carcolor" then
+		image.Image = "rbxassetid://135983067514338"
+		image.ImageRectOffset = Vector2.new(1, 1)
+		image.ImageRectSize = Vector2.new(1200,1200)
+	end
+
+	if name == "avacolor" then
+		image.Image = "rbxassetid://88738565686900"
+		image.ImageRectOffset = Vector2.new(1, 1)
+		image.ImageRectSize = Vector2.new(1200,1200)
+	end
+
+	
+
+       	if name == "retry" then
+		image.Image = "rbxassetid://85334730366974"
+		image.ImageRectOffset = Vector2.new(1, 1)
+		image.ImageRectSize = Vector2.new(1200,1200)
+	end
+
+	if name == "gun" then
+		image.Image = "rbxassetid://93001822915827"
+		image.ImageRectOffset = Vector2.new(1, 1)
+		image.ImageRectSize = Vector2.new(1200,1200)
+	end
+
+	if name == "sword" then
+		image.Image = "rbxassetid://82635240213192"
+		image.ImageRectOffset = Vector2.new(10, 40)
+		image.ImageRectSize = Vector2.new(900,947)
+	end
+
+	if name == "egg" then
+		image.Image = "rbxassetid://110250017854460"
+		image.ImageRectOffset = Vector2.new(10, 40)
+		image.ImageRectSize = Vector2.new(900,947)
+	end
+
+	if name == "gear" then
+	        image.Image = "rbxassetid://134488580093972"
+		image.ImageRectOffset = Vector2.new(10, 40)
+		image.ImageRectSize = Vector2.new(1200,1200)
 	end
 end
 
 local NEVERLOSE = {
 	auto_function = {},
 	Themes = {
-		BlackgroundColor = Color3.fromRGB(43, 43, 43),
-		BlackColor = Color3.fromRGB(16, 16, 16),
-		HeaderColor = Color3.fromRGB(47, 47, 47),
-		TraceColor = Color3.fromRGB(100, 100, 100),
-		MainColor = Color3.fromRGB(255, 140, 0),
-		MainColorDrop = Color3.fromRGB(65, 54, 31),
-		SectionColor = Color3.fromRGB(26, 26, 26),
-		StrokeColor = Color3.fromRGB(50, 50, 50),
-		ButtonBlackgroundColor = Color3.fromRGB(26, 26, 26)
+		BlackgroundColor = Color3.fromRGB(1, 17, 33)
+		BlackColor = Color3.fromRGB(9, 9, 19)
+		HeaderColor = Color3.fromRGB(7, 7, 17)
+	        TraceColor = Color3.fromRGB(0, 34, 44)
+		MainColor = Color3.fromRGB(0, 172, 247)
+		MainColorDrop = Color3.fromRGB(3, 6, 25)
+		SectionColor = Color3.fromRGB(0, 17, 35)
+		StrokeColor = Color3.fromRGB(3, 35, 50)
+	        ButtonBlackgroundColor = Color3.fromRGB(2, 5, 22)
 	},
 	_Version="10.C",
 	_Name="NEVERLOSE"
@@ -132,30 +234,19 @@ local NEVERLOSE = {
 
 print(NEVERLOSE._Name..":",NEVERLOSE._Version..':',[[https://neverlose.cc/]],": UI BY OWNER BEDOL HUB","__ui")
 
-function NEVERLOSE:Theme(name)
-	name = tostring(name or "original"):lower()
+
+function NEVERLOSE:AddWindow(NameScriptHub,Text,name,UICustomSize)
+		name = tostring(name or "original"):lower()
 	if name == "original" then
 		NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(1, 17, 33)
 		NEVERLOSE.Themes.BlackColor = Color3.fromRGB(9, 9, 19)
 		NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(7, 7, 17)
 		NEVERLOSE.Themes.TraceColor = Color3.fromRGB(0, 34, 44)
-		NEVERLOSE.Themes.MainColor = Color3.fromRGB(19, 176, 243)
+		NEVERLOSE.Themes.MainColor = Color3.fromRGB(0, 172, 247)
 		NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(3, 6, 25)
 		NEVERLOSE.Themes.SectionColor = Color3.fromRGB(0, 17, 35)
 		NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(3, 35, 50)
 		NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(2, 5, 22)
-	end
-
-	if name == "nightly" then
-		NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(43, 43, 43)
-		NEVERLOSE.Themes.BlackColor = Color3.fromRGB(16, 16, 16)
-		NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(47, 47, 47)
-		NEVERLOSE.Themes.TraceColor = Color3.fromRGB(100, 100, 100)
-		NEVERLOSE.Themes.MainColor = Color3.fromRGB(255, 140, 0)
-		NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(65, 54, 31)
-		NEVERLOSE.Themes.SectionColor = Color3.fromRGB(26, 26, 26)
-		NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(50, 50, 50)
-		NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(26, 26, 26)
 	end
 
 	if name == "dark" then
@@ -169,12 +260,9 @@ function NEVERLOSE:Theme(name)
 		NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(28, 28, 28)
 		NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(13, 13, 13)
 	end
-end
-
-function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 	local WindowFunctinos={}
 	local ToggleUI=false
-	local ooldsize=UICustomSize or UDim2.new(0.200000003, 210, 0.200000003, 175)
+	local ooldsize=UICustomSize or UDim2.new(0.43, 0, 0.877, 0)
 	local Tabs={}
 
 	local ScreenGui = Instance.new("ScreenGui")
@@ -534,6 +622,64 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 
 	UICorner_8.CornerRadius = UDim.new(0.5, 0)
 	UICorner_8.Parent = UserImage
+
+	local mainFrame_2b = Instance.new("Frame")
+local saveButton_3c = Instance.new("TextButton")
+local stroke_4d = Instance.new("UIStroke")
+local corner_5e = Instance.new("UICorner")
+local imageLabel_6f = Instance.new("ImageLabel")
+
+mainFrame_2b.Name = "MainFrame"
+mainFrame_2b.Parent = Frame
+mainFrame_2b.BackgroundTransparency = 1
+mainFrame_2b.Position = UDim2.new(0.243, 0, 0.025, 0)
+mainFrame_2b.Size = UDim2.new(0.606889784, 0, 0.0627818182, -13)
+
+-- Save Button (parented to Frame)
+saveButton_3c.Name = "SaveB"
+saveButton_3c.Parent = mainFrame_2b
+saveButton_3c.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+saveButton_3c.Position = UDim2.new(0, 0, 0, 0)
+saveButton_3c.Size = UDim2.new(0.199998885, 0, 1, 0)
+saveButton_3c.ZIndex = 5
+saveButton_3c.Text = "Save"
+saveButton_3c.TextColor3 = Color3.fromRGB(255, 255, 255)
+saveButton_3c.TextTransparency = 0.300
+saveButton_3c.TextSize = 11
+saveButton_3c.Font = Enum.Font.GothamBold
+saveButton_3c.AutoButtonColor = false
+
+-- Stroke (parented to Save Button)
+stroke_4d.Name = "Stroke"
+stroke_4d.Parent = saveButton_3c
+stroke_4d.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+stroke_4d.Color = Color3.fromRGB(28, 28, 28)
+stroke_4d.Thickness = 0.6
+
+-- Corner (parented to Save Button)
+corner_5e.Parent = saveButton_3c
+corner_5e.CornerRadius = UDim.new(0, 2)
+
+-- ImageLabel (parented to Save Button)
+imageLabel_6f.Name = "ImageIcon"
+imageLabel_6f.Parent = saveButton_3c
+imageLabel_6f.Image = "http://www.roblox.com/asset/?id=6035067857"
+imageLabel_6f.ImageColor3 = Color3.fromRGB(255, 255, 255)
+imageLabel_6f.ImageTransparency = 0.300
+imageLabel_6f.BackgroundTransparency = 1
+imageLabel_6f.Position = UDim2.new(0.1, 0, 0.1, 0)
+imageLabel_6f.Size = UDim2.new(0.2, 0, 0.8, 0)
+imageLabel_6f.ZIndex = 6
+
+saveButton_3c.MouseEnter:Connect(function()
+	saveButton_3c.TextTransparency = 0
+	imageLabel_6f.ImageTransparency = 0			
+end)
+
+saveButton_3c.MouseLeave:Connect(function()
+	saveButton_3c.TextTransparency = 0.3
+	imageLabel_6f.ImageTransparency = 0.3
+end)
 
 	UserName.Name = "UserName"
 	UserName.Parent = UserData
@@ -1094,7 +1240,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 				Effect.Name = "Effect"
 				Effect.Parent = Toggle
 				Effect.AnchorPoint = Vector2.new(0, 0.5)
-				Effect.BackgroundColor3 = NEVERLOSE.Themes.MainColorDrop
+				Effect.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
 				Effect.BorderColor3 = Color3.fromRGB(0, 0, 0)
 				Effect.BorderSizePixel = 0
 				Effect.Position = UDim2.new(0.800000012, 0, 0.5, 0)
@@ -1107,7 +1253,8 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 				Icon.Name = "Icon"
 				Icon.Parent = Effect
 				Icon.AnchorPoint = Vector2.new(0.5, 0.5)
-				Icon.BackgroundColor3 = NEVERLOSE.Themes.MainColor
+				Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Icon.BackgroundTransparency = 0.300
 				Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
 				Icon.BorderSizePixel = 0
 				Icon.Position = UDim2.new(0.75, 0, 0.5, 0)
@@ -1121,10 +1268,12 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 				local function toggleval(val,timea)
 					if val then
 						TweenService:Create(LabelText,TweenInfo.new(timea),{TextTransparency=0}):Play()
-						TweenService:Create(Icon,TweenInfo.new(timea),{Position=UDim2.new(0.75,0,0.5,0),BackgroundColor3=NEVERLOSE.Themes.MainColor}):Play();
+						TweenService:Create(Icon,TweenInfo.new(timea),{Position=UDim2.new(0.75,0,0.5,0),BackgroundColor3=NEVERLOSE.Themes.MainColor,BackgroundTransparency=0}):Play();
+						Effect.BackgroundColor3 = Color3.fromRGB(12, 18, 50)
 					else
 						TweenService:Create(LabelText,TweenInfo.new(timea),{TextTransparency=0.3}):Play()
-						TweenService:Create(Icon,TweenInfo.new(timea),{Position=UDim2.new(0.25,0,0.5,0),BackgroundColor3=Color3.fromRGB(194, 194, 194)}):Play();
+						TweenService:Create(Icon,TweenInfo.new(timea),{Position=UDim2.new(0.25,0,0.5,0),BackgroundColor3=Color3.fromRGB(194, 194, 194),BackgroundTransparency=0.3}):Play();
+						Effect.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
 					end
 				end
 
